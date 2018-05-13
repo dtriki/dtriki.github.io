@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- dodat background -->
-    <script type="text/javascript"> document.body.style.backgroundImage = "url('https://image.ibb.co/bVHoPH/registerprepravljen.jpg')"; </script>
+    <script type="text/javascript"> document.body.style.backgroundImage = "url('http://paszavas.com/wp-content/uploads/2016/05/povodac22.jpg')"; </script>
 
     <div class="container">
         <div class="row justify-content-center">

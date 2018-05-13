@@ -24,15 +24,18 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+
+     <!-- Ovo je za Svi mi i psi prvi naziv -->
+            <!-- <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Svi mi i psi') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button>-->
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    <a href="http://localhost/SviPsi/public/" style="text-shadow: 2px 2px #48b5ff;font-size: 40px;;text-decoration:none;margin-top:auto; font-family: Chiller;color:white ">Svi mi i<span style="color: black"> psi</span>  </a>
                     <ul class="navbar-nav mr-auto">
 
                     </ul>

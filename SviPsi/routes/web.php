@@ -15,6 +15,36 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/contact', ['uses' => 'ContactMessageController@create']);
+Route::post('/contact', ['uses' => 'ContactMessageController@store','as' => 'contact.store']);
+
+//za google mapu
+/*use Cornford\Googlmapper\Facades\MapperFacade;
+use Illuminate\Support\Facades\Route;
+
+Route::get('/maps', function () {
+    Mapper::map(
+        43.3209022,
+        21.8957589,
+        [
+            'zoom' => 13,
+            'draggable' => true,
+            'marker' => false,
+            'eventAfterLoad' =>
+            'circleListener (maps[0].shapes[0].circle_0);'
+        ]
+    );
+    return view ('maps');
+});*/
+
+Route::get('/maps', 'Map\MapController@index');
+
+//proba za bazu
+Route::get( '/proba', function(){
+    $users = DB::table('users')->get();
+    return view('proba', ['users' => $users]);
+});
+
 Route::get('/trainer', function () {
     return view('trainer');
 });

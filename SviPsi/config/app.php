@@ -126,6 +126,10 @@ return [
          */
         //dodali kod instalacije
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider', //LARAVEL IDE HELPER
+
+        //dodali za google map
+        Cornford\Googlmapper\MapperServiceProvider::class,
+
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -176,6 +180,9 @@ return [
     */
 
     'aliases' => [
+
+        //dodali za google map
+        'Mapper'         => Cornford\Googlmapper\Facades\MapperFacade::class,
 
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
