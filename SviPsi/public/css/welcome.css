@@ -1,0 +1,58 @@
+body,h1 {font-family: "Raleway", sans-serif;
+    font-size: 80px;}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('https://images.alphacoders.com/102/thumb-1920-102211.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.button {
+    border-radius: 10px;
+    background-color: #12b2ff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.desno:hover{
+    color: #12b2ff;
+    font-weight: bold;
+}
+
+.dugmici{
+    margin-top: 100px;
+}
